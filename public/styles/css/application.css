@@ -127,6 +127,31 @@ body {
       display: none; } }
 
 .posts__container {
-  padding: 0 8em 0 8em; }
-  .posts__container .post--featured .post--featured__img {
-    width: 100%; }
+  padding: 0 3em 0 3em; }
+  .posts__container .post--featured {
+    text-align: center;
+    position: relative; }
+    .posts__container .post--featured .post--featured__img {
+      width: 100%;
+      max-width: 1180px; }
+    .posts__container .post--featured .post--featured__excerpt {
+      padding: 2rem 2rem 1rem 2rem;
+      text-align: left;
+      color: black;
+      position: absolute;
+      right: 0rem;
+      bottom: 3rem;
+      background-color: rgba(255, 255, 255, 0.85);
+      width: 36rem; }
+      .posts__container .post--featured .post--featured__excerpt .excerpt__category {
+        font-family: "FuturaBT-Heavy", sans-serif;
+        font-weight: 100;
+        letter-spacing: 2px;
+        font-size: .9em;
+        opacity: 0.4; }
+      .posts__container .post--featured .post--featured__excerpt .excerpt__header {
+        font-family: "FuturaBT-Heavy", sans-serif;
+        font-size: 1.5rem; }
+      .posts__container .post--featured .post--featured__excerpt .excerpt__blurb {
+        font-family: "FuturaBT-Book", sans-serif;
+        font-size: 1.25rem; }
