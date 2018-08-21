@@ -13,8 +13,8 @@
   .navbar__nav{
     align-items: center;
     .navbar__nav__item{
-      width: 7.5rem;
-      font-size: 1.2rem;
+      width: 5.5rem;
+      font-size: 1rem;
       text-align: center;
       a{
         color: rgba(1,1,1,.5);
@@ -31,6 +31,7 @@
           }
         }
       &.navbar__nav__item--special{
+        width: 10rem;
         border-radius: 52px;
         padding: 1rem 1.5rem 1rem 1.5rem;
         background-color: $color1-light;

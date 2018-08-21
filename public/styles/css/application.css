@@ -35,8 +35,8 @@ body {
   .navbar .navbar__nav {
     align-items: center; }
     .navbar .navbar__nav .navbar__nav__item {
-      width: 7.5rem;
-      font-size: 1.2rem;
+      width: 5.5rem;
+      font-size: 1rem;
       text-align: center; }
       .navbar .navbar__nav .navbar__nav__item a {
         color: rgba(1, 1, 1, 0.5);
@@ -48,6 +48,7 @@ body {
       .navbar .navbar__nav .navbar__nav__item.navbar__nav__item--current a {
         color: black; }
       .navbar .navbar__nav .navbar__nav__item.navbar__nav__item--special {
+        width: 10rem;
         border-radius: 52px;
         padding: 1rem 1.5rem 1rem 1.5rem;
         background-color: #ffb21a; }
@@ -106,7 +107,7 @@ body {
         max-width: 0.5rem;
         cursor: pointer;
         font-family: "FuturaBT-Book", sans-serif;
-        font-size: 1.25em;
+        font-size: 1.1em;
         opacity: 0.4; }
         .banner .banner__filterbar .banner__filter .filter__link:hover {
           text-decoration: underline; }
@@ -129,11 +130,13 @@ body {
 .posts__container {
   padding: 0 3em 0 3em; }
   .posts__container .post--featured {
-    text-align: center;
-    position: relative; }
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    max-width: 1180px; }
     .posts__container .post--featured .post--featured__img {
-      width: 100%;
-      max-width: 1180px; }
+      width: 100%; }
     .posts__container .post--featured .post--featured__excerpt {
       padding: 2rem 2rem 1rem 2rem;
       text-align: left;
@@ -151,7 +154,21 @@ body {
         opacity: 0.4; }
       .posts__container .post--featured .post--featured__excerpt .excerpt__header {
         font-family: "FuturaBT-Heavy", sans-serif;
-        font-size: 1.5rem; }
+        font-size: 1.5rem;
+        font-weight: lighter; }
       .posts__container .post--featured .post--featured__excerpt .excerpt__blurb {
         font-family: "FuturaBT-Book", sans-serif;
-        font-size: 1.25rem; }
+        font-size: 1.1rem; }
+
+@media (max-width: 720px) {
+  .posts__container {
+    padding: 0; }
+    .posts__container .post--featured .post--featured__excerpt {
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      text-decoration: none;
+      padding: 2rem;
+      position: static;
+      width: 100%; } }
