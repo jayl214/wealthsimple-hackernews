@@ -35,20 +35,20 @@ body {
   .navbar .navbar__nav {
     align-items: center; }
     .navbar .navbar__nav .navbar__nav__item {
-      width: 5.5rem;
-      font-size: 1rem;
+      width: 6rem;
+      font-family: "FuturaBT-Book", sans-serif;
+      font-size: 1.1rem;
       text-align: center; }
       .navbar .navbar__nav .navbar__nav__item a {
         color: rgba(1, 1, 1, 0.5);
         text-decoration: none;
-        font-family: "FuturaBT-Book", sans-serif;
         vertical-align: center; }
         .navbar .navbar__nav .navbar__nav__item a:hover {
           color: black; }
       .navbar .navbar__nav .navbar__nav__item.navbar__nav__item--current a {
         color: black; }
       .navbar .navbar__nav .navbar__nav__item.navbar__nav__item--special {
-        width: 10rem;
+        width: 8.75rem;
         border-radius: 52px;
         padding: 1rem 1.5rem 1rem 1.5rem;
         background-color: #ffb21a; }
@@ -93,7 +93,7 @@ body {
     font-family: "FuturaBT-Heavy", sans-serif;
     font-weight: 100;
     letter-spacing: 2px;
-    font-size: 1em;
+    font-size: .9em;
     opacity: 0.4; }
   .banner .banner__filterbar {
     justify-content: center;
@@ -104,10 +104,10 @@ body {
     .banner .banner__filterbar .banner__filter {
       max-width: 8rem; }
       .banner .banner__filterbar .banner__filter .filter__link {
+        font-family: "FuturaBT-Book", sans-serif;
+        font-size: 1.1rem;
         max-width: 0.5rem;
         cursor: pointer;
-        font-family: "FuturaBT-Book", sans-serif;
-        font-size: 1.1em;
         opacity: 0.4; }
         .banner .banner__filterbar .banner__filter .filter__link:hover {
           text-decoration: underline; }
@@ -159,6 +159,25 @@ body {
       .posts__container .post--featured .post--featured__excerpt .excerpt__blurb {
         font-family: "FuturaBT-Book", sans-serif;
         font-size: 1.1rem; }
+  .posts__container .recent-posts__container {
+    margin-top: 6rem; }
+    .posts__container .recent-posts__container .recent-posts__intro .recent-posts__intro__header {
+      margin: 0 0 1rem;
+      font-family: "FuturaBT-Heavy", sans-serif;
+      font-size: 1.5rem;
+      font-weight: lighter;
+      font-size: 2rem;
+      letter-spacing: -2px; }
+    .posts__container .recent-posts__container .recent-posts__intro .flex-row {
+      font-family: "FuturaBT-Book", sans-serif;
+      font-size: 1.1rem; }
+      .posts__container .recent-posts__container .recent-posts__intro .flex-row .recent-posts__intro__blurb {
+        opacity: 0.4;
+        margin: 0; }
+      .posts__container .recent-posts__container .recent-posts__intro .flex-row a {
+        text-align: right;
+        text-decoration: none;
+        color: #ffb21a; }
 
 @media (max-width: 720px) {
   .posts__container {

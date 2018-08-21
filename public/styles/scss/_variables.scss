@@ -11,7 +11,32 @@
 $font1: 'FuturaBT-Book', sans-serif;
 $font1-heavy: 'FuturaBT-Heavy', sans-serif;
 
-$color1: orange;
-$color1-light: rgba(255, 178, 26, 1);
+//primary paragraph and normal text font
+@mixin font--main{
+  font-family: $font1;
+  font-size: 1.1rem;
+}
 
+//Paragraph header font
+@mixin font--header{
+  font-family: $font1-heavy;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+// font for faint flavor text
+@mixin font--subtitle{
+  font-family: $font1-heavy;
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-size: .9em;
+  opacity: 0.4;
+};
+
+//primary highlight color
+$color1-light: rgba(255, 178, 26, 1);
+//darker highlight color, appears on hover
+$color1: orange;
+
+//light gray background
 $color-background: rgba(249,248,246,1);

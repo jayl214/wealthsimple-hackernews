@@ -13,11 +13,7 @@
     opacity: 0.9;
   }
   .banner__subtitle{
-    font-family: $font1-heavy;
-    font-weight: 100;
-    letter-spacing: 2px;
-    font-size: 1em;
-    opacity: 0.4;
+    @include font--subtitle;
   }
 
   .banner__filterbar{
@@ -30,10 +26,9 @@
     .banner__filter{
       max-width: 8rem;
       .filter__link{
+        @include font--main;
         max-width: 0.5rem;
         cursor: pointer;
-        font-family: $font1;
-        font-size: 1.1em;
         opacity: 0.4;
         &:hover{
           text-decoration: underline;
