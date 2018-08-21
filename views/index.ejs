@@ -13,17 +13,21 @@
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="styles/css/application.css">
 
+    <link rel="icon"
+      type="image/svg"
+      href="https://www.wealthsimple.com/assets/magazine/images/header/logo_small-6dccf727ddc595c19f73cecef3069936.svg">
   </head>
+
   <body>
 
     <%- include ./partials/navBar.ejs %>
 
     <div class="magazine__container">
       <%- include ./partials/banner.ejs %>
-
       <%- include ./partials/posts.ejs %>
-
     </div>
+
+    <script src="scripts/lazyLoad.js"></script>
 
   </body>
 </html>

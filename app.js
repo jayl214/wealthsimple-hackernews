@@ -26,7 +26,7 @@ if(process.env.NODE_ENV === 'production'){
 }
 
 // Default catchall that reroutes back to home
-app.get('*', (req, res) => {
+app.get('/', (req, res) => {
   res.render('index')
 })
 
