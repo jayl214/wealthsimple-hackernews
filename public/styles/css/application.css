@@ -22,6 +22,7 @@ body {
     flex: 1; }
 
 .navbar {
+  z-index: 1000;
   background-color: white;
   width: 83%;
   padding: 1.75% 10% 1.75% 7%;
@@ -95,19 +96,22 @@ body {
     opacity: 0.4; }
   .banner .banner__filterbar {
     justify-content: center;
-    margin-top: 6em; }
+    margin: 6em 0 3em 0; }
     .banner .banner__filterbar .filterbar__bullet {
+      max-width: 10px;
       opacity: 0.4; }
-    .banner .banner__filterbar .banner__filter .filter__link {
-      max-width: 0.5rem;
-      cursor: pointer;
-      font-family: "FuturaBT-Book", sans-serif;
-      font-size: 1.25em;
-      opacity: 0.4; }
-      .banner .banner__filterbar .banner__filter .filter__link:hover {
-        text-decoration: underline; }
-      .banner .banner__filterbar .banner__filter .filter__link.filter__link--active {
-        opacity: 1; }
+    .banner .banner__filterbar .banner__filter {
+      max-width: 8rem; }
+      .banner .banner__filterbar .banner__filter .filter__link {
+        max-width: 0.5rem;
+        cursor: pointer;
+        font-family: "FuturaBT-Book", sans-serif;
+        font-size: 1.25em;
+        opacity: 0.4; }
+        .banner .banner__filterbar .banner__filter .filter__link:hover {
+          text-decoration: underline; }
+        .banner .banner__filterbar .banner__filter .filter__link.filter__link--active {
+          opacity: 1; }
 
 @media (max-width: 1000px) {
   .banner .banner__header {
@@ -121,3 +125,8 @@ body {
       display: none; }
     .banner .banner__filterbar {
       display: none; } }
+
+.posts__container {
+  padding: 0 8em 0 8em; }
+  .posts__container .post--featured .post--featured__img {
+    width: 100%; }
