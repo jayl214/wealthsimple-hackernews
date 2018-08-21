@@ -14,7 +14,7 @@
   }
   .banner__subtitle{
     font-family: $font1-heavy;
-    font-weight: lighter;
+    font-weight: 100;
     letter-spacing: 2px;
     font-size: 1em;
     opacity: 0.4;
@@ -46,7 +46,8 @@
 @media (max-width: 1000px) {
   .banner{
     .banner__header{
-      font-size: 4em;
+      font-size: 3em;
+      letter-spacing: 0px;
     }
   }
 }
