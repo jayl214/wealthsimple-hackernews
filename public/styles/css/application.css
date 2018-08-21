@@ -135,9 +135,9 @@ body {
     cursor: pointer;
     width: 100%;
     max-width: 1180px; }
-    .posts__container .post--featured .post--featured__img {
+    .posts__container .post--featured a .post--featured__img {
       width: 100%; }
-    .posts__container .post--featured .post--featured__excerpt {
+    .posts__container .post--featured a .post--featured__excerpt {
       padding: 2rem 2rem 1rem 2rem;
       text-align: left;
       color: black;
@@ -146,19 +146,21 @@ body {
       bottom: 3rem;
       background-color: rgba(255, 255, 255, 0.85);
       width: 36rem; }
-      .posts__container .post--featured .post--featured__excerpt .excerpt__category {
+      .posts__container .post--featured a .post--featured__excerpt .excerpt__category {
         font-family: "FuturaBT-Heavy", sans-serif;
         font-weight: 100;
         letter-spacing: 2px;
         font-size: .9em;
         opacity: 0.4; }
-      .posts__container .post--featured .post--featured__excerpt .excerpt__header {
+      .posts__container .post--featured a .post--featured__excerpt .excerpt__header {
         font-family: "FuturaBT-Heavy", sans-serif;
         font-size: 1.5rem;
         font-weight: lighter; }
-      .posts__container .post--featured .post--featured__excerpt .excerpt__blurb {
+      .posts__container .post--featured a .post--featured__excerpt .excerpt__blurb {
         font-family: "FuturaBT-Book", sans-serif;
         font-size: 1.1rem; }
+    .posts__container .post--featured a:hover .excerpt__header {
+      text-decoration: underline; }
   .posts__container .recent-posts__intro {
     margin: 6rem 0 3rem 0; }
     .posts__container .recent-posts__intro .recent-posts__intro__header {
@@ -174,10 +176,14 @@ body {
       .posts__container .recent-posts__intro .flex-row .recent-posts__intro__blurb {
         opacity: 0.4;
         margin: 0; }
-      .posts__container .recent-posts__intro .flex-row a {
+      .posts__container .recent-posts__intro .flex-row a.col {
         text-align: right;
         text-decoration: none;
-        color: #ffb21a; }
+        color: #ffb21a;
+        width: 10%;
+        max-width: 4rem; }
+        .posts__container .recent-posts__intro .flex-row a.col:hover {
+          text-decoration: underline; }
   .posts__container .recent-posts__container {
     display: flex;
     flex-wrap: wrap;
@@ -187,21 +193,26 @@ body {
       margin: 0;
       width: 49%;
       margin-bottom: 1.5rem; }
-      .posts__container .recent-posts__container .recent-post .recent-post__excerpt {
-        padding: 2rem; }
-        .posts__container .recent-posts__container .recent-post .recent-post__excerpt .recent-post__category {
-          font-family: "FuturaBT-Heavy", sans-serif;
-          font-weight: 100;
-          letter-spacing: 2px;
-          font-size: .9em;
-          opacity: 0.4; }
-        .posts__container .recent-posts__container .recent-post .recent-post__excerpt .recent-post__header {
-          font-family: "FuturaBT-Heavy", sans-serif;
-          font-size: 1.5rem;
-          font-weight: lighter; }
-        .posts__container .recent-posts__container .recent-post .recent-post__excerpt .recent-post__blurb {
-          font-family: "FuturaBT-Book", sans-serif;
-          font-size: 1.1rem; }
+      .posts__container .recent-posts__container .recent-post a {
+        text-decoration: none;
+        color: black; }
+        .posts__container .recent-posts__container .recent-post a .recent-post__excerpt {
+          padding: 2rem; }
+          .posts__container .recent-posts__container .recent-post a .recent-post__excerpt .recent-post__category {
+            font-family: "FuturaBT-Heavy", sans-serif;
+            font-weight: 100;
+            letter-spacing: 2px;
+            font-size: .9em;
+            opacity: 0.4; }
+          .posts__container .recent-posts__container .recent-post a .recent-post__excerpt .recent-post__header {
+            font-family: "FuturaBT-Heavy", sans-serif;
+            font-size: 1.5rem;
+            font-weight: lighter; }
+          .posts__container .recent-posts__container .recent-post a .recent-post__excerpt .recent-post__blurb {
+            font-family: "FuturaBT-Book", sans-serif;
+            font-size: 1.1rem; }
+        .posts__container .recent-posts__container .recent-post a:hover .recent-post__header {
+          text-decoration: underline; }
 
 @media (max-width: 720px) {
   .posts__container {

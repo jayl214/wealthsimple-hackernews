@@ -7,26 +7,33 @@
     cursor: pointer;
     width: 100%;
     max-width: 1180px;
-    .post--featured__img{
-      width: 100%;
-    }
-    .post--featured__excerpt{
-      padding: 2rem 2rem 1rem 2rem;
-      text-align: left;
-      color: black;
-      position: absolute;
-      right: 0rem;
-      bottom: 3rem;
-      background-color: rgba(255,255,255,.85);
-      width: 36rem;
-      .excerpt__category{
-        @include font--subtitle;
+    a{
+      .post--featured__img{
+        width: 100%;
       }
-      .excerpt__header{
-        @include font--header;
+      .post--featured__excerpt{
+        padding: 2rem 2rem 1rem 2rem;
+        text-align: left;
+        color: black;
+        position: absolute;
+        right: 0rem;
+        bottom: 3rem;
+        background-color: rgba(255,255,255,.85);
+        width: 36rem;
+        .excerpt__category{
+          @include font--subtitle;
+        }
+        .excerpt__header{
+          @include font--header;
+        }
+        .excerpt__blurb{
+          @include font--main;
+        }
       }
-      .excerpt__blurb{
-        @include font--main;
+      &:hover{
+        .excerpt__header{
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -45,10 +52,15 @@
         opacity: 0.4;
         margin: 0;
       }
-      a{
+      a.col{
         text-align: right;
         text-decoration: none;
         color: $color1-light;
+        width: 10%;
+        max-width: 4rem;
+        &:hover{
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -58,23 +70,35 @@
     flex-wrap:wrap;
     justify-content: space-between;
     .recent-post{
+
+
       background-color: white;
       margin: 0;
       width: 49%;
       margin-bottom: 1.5rem;
-      .recent-post__excerpt{
-        padding: 2rem;
-        .recent-post__category{
-          @include font--subtitle;
+      a{
+        text-decoration: none;
+        color: black;
+        .recent-post__excerpt{
+          padding: 2rem;
+          .recent-post__category{
+            @include font--subtitle;
+          }
+          .recent-post__header{
+            @include font--header;
+          }
+          .recent-post__blurb{
+            @include font--main;
+          }
         }
-        .recent-post__header{
-          @include font--header;
-        }
-        .recent-post__blurb{
-          @include font--main;
+        &:hover{
+          .recent-post__header{
+            text-decoration: underline;
+          }
         }
       }
     }
+
 
   }
 
