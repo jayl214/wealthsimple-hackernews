@@ -1,16 +1,3 @@
-@font-face {
-  font-family: FuturaBT-Book;
-  src: url(https://d1p4wrw087wab3.cloudfront.net/fonts/FuturaBT-Book.woff2);
-}
-
-@font-face {
-  font-family: FuturaBT-Heavy;
-  src: url(https://d1p4wrw087wab3.cloudfront.net/fonts/FuturaBT-Heavy.woff2);
-}
-
-$font1: 'FuturaBT-Book', sans-serif;
-$font1-heavy: 'FuturaBT-Heavy', sans-serif;
-
 body{
   padding: 0;
   margin: 0;
@@ -20,7 +7,7 @@ body{
   width: 100%;
   padding: 0;
   margin:0;
-  background-color: rgba(249,248,246,1);
+  background-color: $color-background;
 }
 
 .flex-row {

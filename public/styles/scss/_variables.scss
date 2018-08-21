@@ -1,0 +1,17 @@
+@font-face {
+  font-family: FuturaBT-Book;
+  src: url(https://d1p4wrw087wab3.cloudfront.net/fonts/FuturaBT-Book.woff2);
+}
+
+@font-face {
+  font-family: FuturaBT-Heavy;
+  src: url(https://d1p4wrw087wab3.cloudfront.net/fonts/FuturaBT-Heavy.woff2);
+}
+
+$font1: 'FuturaBT-Book', sans-serif;
+$font1-heavy: 'FuturaBT-Heavy', sans-serif;
+
+$color1: orange;
+$color1-light: rgba(255, 178, 26, 1);
+
+$color-background: rgba(249,248,246,1);
