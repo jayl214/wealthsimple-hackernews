@@ -1,0 +1,48 @@
+@font-face {
+  font-family: FuturaBT-Book;
+  src: url(https://d1p4wrw087wab3.cloudfront.net/fonts/FuturaBT-Book.woff2); }
+
+.content {
+  padding-top: 80px;
+  background-color: #f9f8f6; }
+
+.flex-row {
+  display: flex; }
+  .flex-row .col {
+    flex: 1; }
+
+@media (max-width: 619px) {
+  .flex-row {
+    display: block; } }
+
+.navbar {
+  background-color: white;
+  width: 83%;
+  padding: 1% 10% 1% 7%;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center; }
+  .navbar .navbar__logo {
+    width: 100%;
+    max-width: 200px; }
+  .navbar .navbar__nav {
+    align-items: center; }
+    .navbar .navbar__nav .navbar__nav__item {
+      width: 6.5rem;
+      font-size: 1.05rem;
+      text-align: center; }
+      .navbar .navbar__nav .navbar__nav__item a {
+        color: rgba(1, 1, 1, 0.5);
+        text-decoration: none;
+        font-family: "FuturaBT-Book";
+        vertical-align: center; }
+        .navbar .navbar__nav .navbar__nav__item a:hover {
+          color: black; }
+      .navbar .navbar__nav .navbar__nav__item.navbar__nav__item--special {
+        border-radius: 52px;
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        background-color: #ffb21a; }
+        .navbar .navbar__nav .navbar__nav__item.navbar__nav__item--special:hover {
+          background-color: orange; }
+        .navbar .navbar__nav .navbar__nav__item.navbar__nav__item--special a {
+          color: white; }
