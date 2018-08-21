@@ -11,10 +11,6 @@
   .flex-row .col {
     flex: 1; }
 
-@media (max-width: 619px) {
-  .flex-row {
-    display: block; } }
-
 .navbar {
   background-color: white;
   width: 83%;
@@ -46,3 +42,20 @@
           background-color: orange; }
         .navbar .navbar__nav .navbar__nav__item.navbar__nav__item--special a {
           color: white; }
+
+@media (max-width: 619px) {
+  .navbar .navbar__nav:after {
+    content: '\2630';
+    line-height: 40px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: #ffb21a;
+    color: white; }
+    .navbar .navbar__nav:after:hover {
+      background-color: orange; }
+  .navbar .navbar__nav .navbar__nav__item {
+    display: none; } }

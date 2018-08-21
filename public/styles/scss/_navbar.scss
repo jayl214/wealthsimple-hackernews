@@ -35,24 +35,38 @@
           color: white;
         }
       }
-      // color: black;
-      // text-decoration: none;
-      // font-family: $font1;
     }
-    // .navbar__nav__list{
-    //   // float: left;
-    //   // list-style: none;
-    //   .navbar__nav__list__item{
-    //     // color: black;
-    //     // text-decoration: none;
-    //     // font-family: $font1;
-    //     // display: block;
-    //     text-decoration: none;
-    //     // padding: 0 10px;
-    //   }
-    // }
   }
 }
+@media (max-width: 619px) {
+  .navbar{
+    .navbar__logo{
+
+    }
+    .navbar__nav{
+      &:after{
+        content: '\2630';
+        line-height: 40px;
+        font-size: 1.1em;
+        cursor: pointer;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+
+        background-color: rgba(255, 178, 26, 1);
+        color: white;
+        &:hover{
+          background-color:  orange;
+        }
+      }
+      .navbar__nav__item{
+        display: none;
+      }
+    }
+  }
+}
+
 // .container {
 //   position: relative;
 //   margin: 0 auto;
