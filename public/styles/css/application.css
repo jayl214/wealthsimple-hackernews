@@ -2,8 +2,18 @@
   font-family: FuturaBT-Book;
   src: url(https://d1p4wrw087wab3.cloudfront.net/fonts/FuturaBT-Book.woff2); }
 
-.content {
-  padding-top: 80px;
+@font-face {
+  font-family: FuturaBT-Heavy;
+  src: url(https://d1p4wrw087wab3.cloudfront.net/fonts/FuturaBT-Heavy.woff2); }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+.magazine__container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
   background-color: #f9f8f6; }
 
 .flex-row {
@@ -30,7 +40,7 @@
       .navbar .navbar__nav .navbar__nav__item a {
         color: rgba(1, 1, 1, 0.5);
         text-decoration: none;
-        font-family: "FuturaBT-Book";
+        font-family: "FuturaBT-Book", sans-serif;
         vertical-align: center; }
         .navbar .navbar__nav .navbar__nav__item a:hover {
           color: black; }
@@ -64,3 +74,22 @@
     color: white; }
     .navbar .navbar__nav .navbar__nav__hamburger:hover {
       background-color: orange; } }
+
+.banner {
+  padding-top: 28vh;
+  text-align: center; }
+  .banner .banner__logo {
+    margin-bottom: 1%; }
+  .banner .banner__header {
+    margin: 0 auto;
+    font-family: "FuturaBT-Heavy", sans-serif;
+    letter-spacing: -4px;
+    font-weight: lighter;
+    font-size: 5.5em;
+    opacity: 0.9; }
+  .banner .banner__subtitle {
+    font-family: "FuturaBT-Heavy", sans-serif;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    font-size: 1em;
+    opacity: 0.4; }

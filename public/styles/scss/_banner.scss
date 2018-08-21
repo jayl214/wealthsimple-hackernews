@@ -1,0 +1,22 @@
+.banner{
+  padding-top: 28vh;
+  text-align: center;
+  .banner__logo{
+    margin-bottom: 1%;
+  }
+  .banner__header{
+    margin: 0 auto;
+    font-family: $font1-heavy;
+    letter-spacing: -4px;
+    font-weight: lighter;
+    font-size: 5.5em;
+    opacity: 0.9;
+  }
+  .banner__subtitle{
+    font-family: $font1-heavy;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    font-size: 1em;
+    opacity: 0.4;
+  }
+}
