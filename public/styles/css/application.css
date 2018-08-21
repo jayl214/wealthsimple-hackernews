@@ -24,7 +24,7 @@ body {
 .navbar {
   background-color: white;
   width: 83%;
-  padding: 1% 10% 1% 7%;
+  padding: 1.75% 10% 1.75% 7%;
   justify-content: space-between;
   position: fixed;
   align-items: center; }
@@ -34,8 +34,8 @@ body {
   .navbar .navbar__nav {
     align-items: center; }
     .navbar .navbar__nav .navbar__nav__item {
-      width: 6.5rem;
-      font-size: 1.05rem;
+      width: 7.5rem;
+      font-size: 1.2rem;
       text-align: center; }
       .navbar .navbar__nav .navbar__nav__item a {
         color: rgba(1, 1, 1, 0.5);
@@ -76,7 +76,7 @@ body {
       background-color: orange; } }
 
 .banner {
-  padding-top: 28vh;
+  padding-top: 20vh;
   text-align: center; }
   .banner .banner__logo {
     margin-bottom: 1%; }
@@ -85,7 +85,7 @@ body {
     font-family: "FuturaBT-Heavy", sans-serif;
     letter-spacing: -4px;
     font-weight: lighter;
-    font-size: 5.5em;
+    font-size: 6em;
     opacity: 0.9; }
   .banner .banner__subtitle {
     font-family: "FuturaBT-Heavy", sans-serif;
@@ -93,3 +93,16 @@ body {
     letter-spacing: 2px;
     font-size: 1em;
     opacity: 0.4; }
+  .banner .banner__filterbar {
+    margin-top: 6em; }
+    .banner .banner__filterbar .filterbar__bullet {
+      opacity: 0.4; }
+    .banner .banner__filterbar .banner__filter .filter__link {
+      cursor: pointer;
+      font-family: "FuturaBT-Book", sans-serif;
+      font-size: 1.25em;
+      opacity: 0.4; }
+      .banner .banner__filterbar .banner__filter .filter__link:hover {
+        text-decoration: underline; }
+      .banner .banner__filterbar .banner__filter .filter__link.filter__link--active {
+        opacity: 1; }

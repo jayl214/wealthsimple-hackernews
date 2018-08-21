@@ -1,5 +1,5 @@
 .banner{
-  padding-top: 28vh;
+  padding-top: 20vh;
   text-align: center;
   .banner__logo{
     margin-bottom: 1%;
@@ -9,7 +9,7 @@
     font-family: $font1-heavy;
     letter-spacing: -4px;
     font-weight: lighter;
-    font-size: 5.5em;
+    font-size: 6em;
     opacity: 0.9;
   }
   .banner__subtitle{
@@ -18,5 +18,26 @@
     letter-spacing: 2px;
     font-size: 1em;
     opacity: 0.4;
+  }
+
+  .banner__filterbar{
+    margin-top: 6em;
+    .filterbar__bullet{
+      opacity: 0.4;
+    }
+    .banner__filter{
+      .filter__link{
+        cursor: pointer;
+        font-family: $font1;
+        font-size: 1.25em;
+        opacity: 0.4;
+        &:hover{
+          text-decoration: underline;
+        }
+        &.filter__link--active{
+          opacity: 1;
+        }
+      }
+    }
   }
 }
