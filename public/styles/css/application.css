@@ -57,7 +57,7 @@ body {
     .navbar .navbar__nav .navbar__nav__hamburger {
       display: none; }
 
-@media (max-width: 619px) {
+@media (max-width: 720px) {
   .navbar .navbar__nav .navbar__nav__item {
     display: none; }
   .navbar .navbar__nav .navbar__nav__hamburger {
@@ -76,7 +76,7 @@ body {
       background-color: orange; } }
 
 .banner {
-  padding-top: 20vh;
+  padding-top: 30vh;
   text-align: center; }
   .banner .banner__logo {
     margin-bottom: 1%; }
@@ -94,10 +94,12 @@ body {
     font-size: 1em;
     opacity: 0.4; }
   .banner .banner__filterbar {
+    justify-content: center;
     margin-top: 6em; }
     .banner .banner__filterbar .filterbar__bullet {
       opacity: 0.4; }
     .banner .banner__filterbar .banner__filter .filter__link {
+      max-width: 0.5rem;
       cursor: pointer;
       font-family: "FuturaBT-Book", sans-serif;
       font-size: 1.25em;
@@ -106,3 +108,15 @@ body {
         text-decoration: underline; }
       .banner .banner__filterbar .banner__filter .filter__link.filter__link--active {
         opacity: 1; }
+
+@media (max-width: 1000px) {
+  .banner .banner__header {
+    font-size: 4em; } }
+
+@media (max-width: 720px) {
+  .banner {
+    padding-top: 10vh; }
+    .banner .banner__logo {
+      display: none; }
+    .banner .banner__filterbar {
+      display: none; } }
