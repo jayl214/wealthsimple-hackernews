@@ -40,7 +40,9 @@
   }
 
   .recent-posts__intro{
-    margin: 6rem 0 3rem 0;
+    width: 100%;
+    max-width: 1180px;
+    margin: 6rem auto 3rem;
     .recent-posts__intro__header{
       margin: 0 0 1rem;
       @include font--header;
@@ -67,6 +69,9 @@
   }
 
   .recent-posts__container{
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
     display: flex;
     flex-wrap:wrap;
     justify-content: space-between;
@@ -74,7 +79,6 @@
       background-color: white;
       margin: 0;
       width: 49%;
-      margin-bottom: 1.5rem;
       a{
         text-decoration: none;
         color: black;

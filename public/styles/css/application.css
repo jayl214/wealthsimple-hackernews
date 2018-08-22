@@ -168,7 +168,9 @@ body {
       .posts__container .post--featured a:hover .excerpt__header {
         text-decoration: underline; }
   .posts__container .recent-posts__intro {
-    margin: 6rem 0 3rem 0; }
+    width: 100%;
+    max-width: 1180px;
+    margin: 6rem auto 3rem; }
     .posts__container .recent-posts__intro .recent-posts__intro__header {
       margin: 0 0 1rem;
       font-family: "FuturaBT-Heavy", sans-serif;
@@ -191,14 +193,16 @@ body {
         .posts__container .recent-posts__intro .flex-row a.col:hover {
           text-decoration: underline; }
   .posts__container .recent-posts__container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
     .posts__container .recent-posts__container .recent-post {
       background-color: white;
       margin: 0;
-      width: 49%;
-      margin-bottom: 1.5rem; }
+      width: 49%; }
       .posts__container .recent-posts__container .recent-post a {
         text-decoration: none;
         color: black; }

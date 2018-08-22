@@ -47,13 +47,14 @@ require( ["https://unpkg.com/axios/dist/axios.min.js"],
                 })(story.data.url)
               })
           }
-          index = startIndex+30
         }
         loadPosts(index, storyIds)
+        index = startIndex+30
 
         window.onscroll = function(ev) {
           if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
             loadPosts(index, storyIds)
+            index = startIndex+30
           }
         };
 
@@ -87,7 +88,7 @@ const appendFeatureTemplate = (header, url, image, blurb) => {
     clone.querySelector('.post--featured__img').setAttribute('src', image);
   }
   clone.querySelector('.excerpt__blurb').textContent = blurb
-  document.querySelector('#post--featured__id').appendChild(clone);
+  document.querySelector('#post--featured__id').replaceChild(clone, document.querySelector('#post--featured__id').firstChild);
 }
 
 
