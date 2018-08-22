@@ -1,6 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
+const grabity = require("grabity");
+
 
 // Set up the express app
 const app = express();
@@ -30,8 +32,21 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 
-app.get( '/show/posts' , (req,res) => {
+app.get( '/show/stories' , (req,res) => {
+  let output
+  (async () => {
+    let it = await grabity.grabIt(req.query.url);
+    output = {
+      image: it.image,
+      blurb: it.description,
+    }
+    res.json(JSON.stringify(output))
+  })();
 
+})
+
+app.get('*', (req, res) => {
+  res.redirect('/')
 })
 
 module.exports = app;
