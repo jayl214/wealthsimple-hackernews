@@ -262,10 +262,10 @@ body {
   z-index: 1000;
   display: none;
   right: 0;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: #ffb21a;
   text-align: center;
   transition: 0.4s; }
