@@ -30,4 +30,8 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 
+app.get( '/show/posts' , (req,res) => {
+
+})
+
 module.exports = app;
