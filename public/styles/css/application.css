@@ -285,6 +285,8 @@ body {
       letter-spacing: 0.05em;
       color: white;
       line-height: 40px; }
+      #responsiveNavBar .responsiveNavBar__buttons a:hover {
+        opacity: 0.4; }
     #responsiveNavBar .responsiveNavBar__buttons .button-group--primary {
       margin-bottom: 8vh; }
     #responsiveNavBar .responsiveNavBar__buttons .social {

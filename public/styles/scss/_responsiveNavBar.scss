@@ -32,6 +32,9 @@
       letter-spacing: 0.05em;
       color: white;
       line-height: 40px;
+      &:hover{
+        opacity: 0.4;
+      }
     }
     .button-group--primary{
       margin-bottom: 8vh;
