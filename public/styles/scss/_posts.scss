@@ -77,11 +77,15 @@
     justify-content: space-between;
     .recent-post{
       background-color: white;
-      margin: 0;
+      margin-bottom: 1rem;
       width: 49%;
       a{
         text-decoration: none;
         color: black;
+        .recent-post__img__container{
+          max-height: 20rem;
+          overflow: hidden;
+        }
         .recent-post__excerpt{
           padding: 2rem;
           .recent-post__category{
