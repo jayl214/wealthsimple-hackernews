@@ -1,10 +1,10 @@
 #responsiveNavBar{
   z-index: 1000;
-  display: block;
+  display: none;
   right: 0;
   position: absolute;
   top: 0;
-  width: 0;
+  width: 100vw;
   height: 100vh;
   background-color: $color1-light;
   text-align: center;

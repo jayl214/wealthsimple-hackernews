@@ -1,6 +1,6 @@
 function openNav() {
-  document.getElementById("responsiveNavBar").style.width = "100vw";
+  document.getElementById("responsiveNavBar").style.display = "block";
 }
 function closeNav() {
-  document.getElementById("responsiveNavBar").style.width = "0";
+  document.getElementById("responsiveNavBar").style.display = "none";
 }

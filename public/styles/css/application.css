@@ -168,6 +168,10 @@ body {
       .posts__container .post--featured a:hover .excerpt__header {
         text-decoration: underline; }
   .posts__container .recent-posts__intro {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
     width: 100%;
     max-width: 1180px;
     margin: 6rem auto 3rem; }
@@ -193,6 +197,10 @@ body {
         .posts__container .recent-posts__intro .flex-row a.col:hover {
           text-decoration: underline; }
   .posts__container .recent-posts__container {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
     width: 100%;
     max-width: 1180px;
     margin: 0 auto;
@@ -252,11 +260,11 @@ body {
 
 #responsiveNavBar {
   z-index: 1000;
-  display: block;
+  display: none;
   right: 0;
   position: absolute;
   top: 0;
-  width: 0;
+  width: 100vw;
   height: 100vh;
   background-color: #ffb21a;
   text-align: center;

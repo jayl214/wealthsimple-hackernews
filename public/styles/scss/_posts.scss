@@ -13,6 +13,7 @@
         width: 100%;
       }
       .post--featured__excerpt{
+
         padding: 2rem 2rem 1rem 2rem;
         text-align: left;
         color: black;
@@ -40,6 +41,10 @@
   }
 
   .recent-posts__intro{
+    box-sizing:border-box;
+     -moz-box-sizing:border-box;
+     -webkit-box-sizing:border-box;
+     -ms-box-sizing:border-box;
     width: 100%;
     max-width: 1180px;
     margin: 6rem auto 3rem;
@@ -69,6 +74,10 @@
   }
 
   .recent-posts__container{
+    box-sizing:border-box;
+     -moz-box-sizing:border-box;
+     -webkit-box-sizing:border-box;
+     -ms-box-sizing:border-box;
     width: 100%;
     max-width: 1180px;
     margin: 0 auto;
