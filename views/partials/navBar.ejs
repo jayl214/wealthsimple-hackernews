@@ -15,9 +15,40 @@
     <div class="navbar__nav__item navbar__nav__item--special col">
       <a href="#">Start Investing</a>
     </div>
-    <div class="navbar__nav__hamburger">
+    <div onclick="openNav()" class="navbar__nav__hamburger">
       <i class="fas fa-bars"></i>
     </div>
   </div>
 
 </div>
+
+<!-- The overlay -->
+<div id="responsiveNavBar">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="button--close" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="responsiveNavBar__buttons">
+    <div class="button-group--primary">
+      <div><a href="">THE DETAILS</a></div>
+      <div><a href="">MAGAZINE</a></div>
+      <div><a href="">WHO WE ARE</a></div>
+      <div><a href="">SIGN IN</a></div>
+    </div>
+
+    <div class="button-group--secondary">
+      <div><a href="">START INVESTING</a></div>
+      <div class="social">
+        <a href="">
+          <i class="fab fa-apple"></i>
+        </a>
+        <a href="">
+          <i class="fab fa-android"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+

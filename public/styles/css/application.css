@@ -22,7 +22,7 @@ body {
     flex: 1; }
 
 .navbar {
-  z-index: 1000;
+  z-index: 100;
   background-color: white;
   width: 83%;
   padding: 1.75% 10% 1.75% 7%;
@@ -242,3 +242,43 @@ body {
     padding: 0 2rem 0 2rem; }
     div.recent-posts__container div.recent-post {
       width: 100% !important; } }
+
+#responsiveNavBar {
+  z-index: 1000;
+  display: block;
+  right: 0;
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100vh;
+  background-color: #ffb21a;
+  text-align: center;
+  transition: 0.4s; }
+  #responsiveNavBar .button--close {
+    font-family: "FuturaBT-Book", sans-serif;
+    text-decoration: none;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 2.75rem;
+    font-weight: lighter;
+    color: white; }
+    #responsiveNavBar .button--close:hover {
+      opacity: 0.4; }
+  #responsiveNavBar .responsiveNavBar__buttons {
+    margin-top: 30vh; }
+    #responsiveNavBar .responsiveNavBar__buttons a {
+      font-family: "FuturaBT-Heavy", sans-serif;
+      font-weight: 100;
+      letter-spacing: 2px;
+      font-size: .9em;
+      opacity: 0.4;
+      opacity: 1;
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      color: white;
+      line-height: 40px; }
+    #responsiveNavBar .responsiveNavBar__buttons .button-group--primary {
+      margin-bottom: 8vh; }
+    #responsiveNavBar .responsiveNavBar__buttons .social {
+      font-size: 3rem; }
