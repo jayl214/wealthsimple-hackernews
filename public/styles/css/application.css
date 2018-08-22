@@ -213,6 +213,8 @@ body {
             font-size: 1.1rem; }
         .posts__container .recent-posts__container .recent-post a:hover .recent-post__header {
           text-decoration: underline; }
+      .posts__container .recent-posts__container .recent-post.hidden {
+        display: none; }
 
 @media (max-width: 720px) {
   .posts__container {

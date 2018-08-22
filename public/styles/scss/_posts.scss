@@ -70,8 +70,6 @@
     flex-wrap:wrap;
     justify-content: space-between;
     .recent-post{
-
-
       background-color: white;
       margin: 0;
       width: 49%;
@@ -96,6 +94,9 @@
             text-decoration: underline;
           }
         }
+      }
+      &.hidden{
+        display: none;
       }
     }
 
