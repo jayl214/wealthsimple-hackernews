@@ -3,16 +3,13 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const grabity = require("grabity");
 
-
-// Set up the express app
 const app = express();
 
-//set root directory for static files
+//set root directory for static files to public folder
 app.use(express.static('public'));
 
-//set view engine to ejs
+
 app.set('view engine', 'ejs')
-// app.set('views', path.join(__dirname, './views'));
 
 // Parse incoming requests data
 app.use(bodyParser.json());
@@ -27,15 +24,16 @@ if(process.env.NODE_ENV === 'production'){
   })
 }
 
-// Default catchall that reroutes back to home
 app.get('/', (req, res) => {
   res.render('index')
 })
 
+//for getting individual story metaData
 app.get( '/show/stories' , (req,res) => {
   let output
   (async () => {
     let it = await grabity.grabIt(req.query.url);
+    //structure output into object, send image url and blurb
     output = {
       image: it.image,
       blurb: it.description,
@@ -45,6 +43,7 @@ app.get( '/show/stories' , (req,res) => {
 
 })
 
+// Default catchall that reroutes back to home
 app.get('*', (req, res) => {
   res.redirect('/')
 })
