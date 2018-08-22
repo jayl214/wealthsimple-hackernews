@@ -51,7 +51,9 @@
 @media (max-width: 720px) {
   .navbar{
     .navbar__logo{
-
+      content:url("https://www.wealthsimple.com/assets/magazine/images/header/logo_small-6dccf727ddc595c19f73cecef3069936.svg");
+      max-width: 32px;
+      height: 32px;
     }
     .navbar__nav{
       .navbar__nav__item{

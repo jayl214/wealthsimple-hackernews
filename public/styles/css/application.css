@@ -60,6 +60,10 @@ body {
       display: none; }
 
 @media (max-width: 720px) {
+  .navbar .navbar__logo {
+    content: url("https://www.wealthsimple.com/assets/magazine/images/header/logo_small-6dccf727ddc595c19f73cecef3069936.svg");
+    max-width: 32px;
+    height: 32px; }
   .navbar .navbar__nav .navbar__nav__item {
     display: none; }
   .navbar .navbar__nav .navbar__nav__hamburger {
@@ -135,32 +139,34 @@ body {
     cursor: pointer;
     width: 100%;
     max-width: 1180px; }
-    .posts__container .post--featured a .post--featured__img {
-      width: 100%; }
-    .posts__container .post--featured a .post--featured__excerpt {
-      padding: 2rem 2rem 1rem 2rem;
-      text-align: left;
-      color: black;
-      position: absolute;
-      right: 0rem;
-      bottom: 3rem;
-      background-color: rgba(255, 255, 255, 0.85);
-      width: 36rem; }
-      .posts__container .post--featured a .post--featured__excerpt .excerpt__category {
-        font-family: "FuturaBT-Heavy", sans-serif;
-        font-weight: 100;
-        letter-spacing: 2px;
-        font-size: .9em;
-        opacity: 0.4; }
-      .posts__container .post--featured a .post--featured__excerpt .excerpt__header {
-        font-family: "FuturaBT-Heavy", sans-serif;
-        font-size: 1.5rem;
-        font-weight: lighter; }
-      .posts__container .post--featured a .post--featured__excerpt .excerpt__blurb {
-        font-family: "FuturaBT-Book", sans-serif;
-        font-size: 1.1rem; }
-    .posts__container .post--featured a:hover .excerpt__header {
-      text-decoration: underline; }
+    .posts__container .post--featured a {
+      text-decoration: none; }
+      .posts__container .post--featured a .post--featured__img {
+        width: 100%; }
+      .posts__container .post--featured a .post--featured__excerpt {
+        padding: 2rem 2rem 1rem 2rem;
+        text-align: left;
+        color: black;
+        position: absolute;
+        right: 0rem;
+        bottom: 3rem;
+        background-color: rgba(255, 255, 255, 0.85);
+        width: 36rem; }
+        .posts__container .post--featured a .post--featured__excerpt .excerpt__category {
+          font-family: "FuturaBT-Heavy", sans-serif;
+          font-weight: 100;
+          letter-spacing: 2px;
+          font-size: .9em;
+          opacity: 0.4; }
+        .posts__container .post--featured a .post--featured__excerpt .excerpt__header {
+          font-family: "FuturaBT-Heavy", sans-serif;
+          font-size: 1.5rem;
+          font-weight: lighter; }
+        .posts__container .post--featured a .post--featured__excerpt .excerpt__blurb {
+          font-family: "FuturaBT-Book", sans-serif;
+          font-size: 1.1rem; }
+      .posts__container .post--featured a:hover .excerpt__header {
+        text-decoration: underline; }
   .posts__container .recent-posts__intro {
     margin: 6rem 0 3rem 0; }
     .posts__container .recent-posts__intro .recent-posts__intro__header {
@@ -224,10 +230,9 @@ body {
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
       -ms-box-sizing: border-box;
-      text-decoration: none;
       padding: 2rem;
-      position: static;
-      width: 100%; }
+      position: static !important;
+      width: 100% !important; }
   .recent-posts__intro {
     padding: 0 2rem 0 2rem; }
     .recent-posts__intro .flex-row {

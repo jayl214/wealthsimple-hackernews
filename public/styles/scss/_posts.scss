@@ -8,6 +8,7 @@
     width: 100%;
     max-width: 1180px;
     a{
+      text-decoration: none;
       .post--featured__img{
         width: 100%;
       }
@@ -114,10 +115,9 @@
        -moz-box-sizing:border-box;
        -webkit-box-sizing:border-box;
        -ms-box-sizing:border-box;
-        text-decoration: none;
         padding: 2rem;
-        position: static;
-        width: 100%;
+        position: static !important;
+        width: 100% !important;
       }
     }
   }
